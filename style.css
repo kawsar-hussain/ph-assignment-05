@@ -1,3 +1,4 @@
+/* basic setup */
 * {
   margin: 0;
   padding: 0;
@@ -14,3 +15,87 @@ img {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+:root {
+  --primary-color: #00a63e;
+}
+
+/* common classes */
+h1 {
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+
+/* nav start here */
+nav {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav__title {
+  font-size: 18px;
+}
+
+.nav__status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav__status img {
+  width: 20px;
+  height: 20px;
+}
+
+.heart,
+.coin {
+  display: flex;
+  background-color: rgba(65, 255, 107, 0.2);
+  padding: 8px 18px;
+  border-radius: 1000px;
+}
+
+.heart p,
+.coin p {
+  margin-right: 8px;
+}
+
+.copy {
+  padding: 8px 18px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 1000px;
+}
+/* nav end here */
+
+/* banner start here */
+.banner {
+  background: radial-gradient(circle, #006747, #013223, #013223);
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: rgb(226, 226, 226);
+}
+
+.banner__logo {
+  width: 90px;
+  height: 90px;
+}
+
+.banner__title {
+  font-size: 36px;
+}
+/* banner end here */
