@@ -21,7 +21,9 @@
     />
 
     <!-- css link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- style for mobile device -->
+    <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 600px)" />
   </head>
   <body>
     <!-- nav start here -->
@@ -29,7 +31,7 @@
       <div class="nav__logo">
         <img src="./images/logo.png" alt="logo of bangladesh government" />
         <h2 class="nav__title">
-          Emergency <br />
+          Emergency <br class="br" />
           Service
         </h2>
       </div>
@@ -41,17 +43,16 @@
         </div>
 
         <div class="coin">
-          <p id="coin">100</p>
+          <p id="coin">1000</p>
           <img src="./images/coin.png" alt="" />
         </div>
 
         <div class="copy">
-          <p><span id="copy">2</span>Copy</p>
+          <p><span id="copy">0</span> Copy</p>
         </div>
       </div>
     </nav>
     <!-- nav end here -->
-
     <!-- banner start here -->
     <section class="banner">
       <img src="./images/logo.png" alt="" class="banner__logo" />
@@ -59,6 +60,158 @@
       <p class="banner__desc">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
     </section>
     <!-- banner end here -->
+
+    <!-- main start here -->
+    <main>
+      <!-- calls login start here -->
+      <section class="calls-login">
+        <div class="call-card-container">
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/emergency.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__emergency">জাতীয় জরুরি সেবা</h3>
+            <p class="card__subtitle" id="card__subtitle__emergency">National Emergency Service</p>
+            <p class="hot-number" id="hot_number_emergency">999</p>
+            <button class="number-author">সার্বজনীন</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-emergency"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-emergency"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/police.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__police">পুলিশ</h3>
+            <p class="card__subtitle" id="card__subtitle__police">Police</p>
+            <p class="hot-number" id="hot_number_police">999</p>
+            <button class="number-author">পুলিশ</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-police"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-police"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/fire-service.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__fire">ফায়ার সার্ভিস</h3>
+            <p class="card__subtitle" id="card__subtitle__fire">Fire Service</p>
+            <p class="hot-number" id="hot_number_fire">999</p>
+            <button class="number-author">ফায়ার</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-fire"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-fire"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/ambulance.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__ambulance">অ্যাম্বুলেন্স</h3>
+            <p class="card__subtitle" id="card__subtitle__ambulance">Ambulance</p>
+            <p class="hot-number" id="hot_number_ambulance">1994-999999</p>
+            <button class="number-author">স্বাস্থ্য</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-ambulance"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-ambulance"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/emergency.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__child">নারী ও শিশু সহায়তা</h3>
+            <p class="card__subtitle" id="card__subtitle__child">Women & Child Helpline</p>
+            <p class="hot-number" id="hot_number_child">109</p>
+            <button class="number-author">সহায়তা</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-child"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-child"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/emergency.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__anti">দুদক</h3>
+            <p class="card__subtitle" id="card__subtitle__anti">Anti-Corruption</p>
+            <p class="hot-number" id="hot_number_anti">106</p>
+            <button class="number-author">সরকারি</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-anti"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-anti"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/emergency.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__electricity">বিদ্যুৎ বিভ্রাট</h3>
+            <p class="card__subtitle" id="card__subtitle__electricity">Electricity Outage</p>
+            <p class="hot-number" id="hot_number_electricity">16216</p>
+            <button class="number-author">বিদ্যুৎ</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-electricity"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-electricity"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/emergency.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__brac">ব্র্যাক</h3>
+            <p class="card__subtitle" id="card__subtitle__brac">Brac</p>
+            <p class="hot-number" id="hot_number_brac">16445</p>
+            <button class="number-author">এনজিও</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-brac"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-brac"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__nav">
+              <div class="card__img"><img src="./images/emergency.png" alt="" /></div>
+              <i class="fa-regular fa-heart hearts"></i>
+            </div>
+            <h3 class="card__title" id="title__bangla__railway">বাংলাদেশ রেলওয়ে</h3>
+            <p class="card__subtitle" id="card__subtitle__railway">Bangladesh Railway</p>
+            <p class="hot-number" id="hot_number_railway">163</p>
+            <button class="number-author">পরিবহন</button>
+            <div class="card__btn">
+              <button class="copy-btn" id="copy-btn-railway"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="call-btn" id="call-btn-railway"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+        </div>
+        <div class="call-history">
+          <div class="history-nav">
+            <p><i class="fa-regular fa-clock"></i> Call History</p>
+            <button class="clear-btn" id="clear">Clear</button>
+          </div>
+          <div class="history-container" id="history-container">
+            <div class="history" id="history" style="display: none">
+              <div class="history__info" id="history__info">
+                <p class="history__title" id="history-title">জাতীয় জরুরি সেবা</p>
+                <p class="history-number">999</p>
+              </div>
+              <div class="history__time" id="history-time"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- calls login end here -->
+    </main>
+    <!-- main end here -->
 
     <!-- script link -->
     <script src="./script.js"></script>

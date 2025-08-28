@@ -1,0 +1,32 @@
+nav {
+  padding: 10px 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav__title {
+  font-size: 20px;
+}
+
+.nav__logo {
+  flex-direction: column;
+}
+
+.br {
+  display: none;
+}
+
+.nav__status {
+  display: flex;
+  justify-content: center;
+}
+
+.banner__title {
+  font-size: 26px;
+}
+
+.banner__desc {
+  text-align: center;
+  padding: 0 10px;
+  font-size: 15px;
+}
