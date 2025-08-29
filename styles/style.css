@@ -104,14 +104,14 @@ nav {
 /* banner end here */
 
 /* card start here */
-.calls-login {
-  display: flex;
-  gap: 20px;
-}
-
 main {
   padding: 40px 80px;
   background-color: rgba(65, 255, 107, 0.1);
+}
+
+.calls-login {
+  display: flex;
+  gap: 20px;
 }
 
 .call-card-container {
@@ -131,6 +131,7 @@ main {
 .card__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card__nav i {
@@ -204,6 +205,7 @@ main {
 .copy-btn:hover {
   background-color: #f2f2f2;
 }
+/* card end here */
 
 /* call history */
 .call-history {
@@ -269,5 +271,3 @@ main {
   font-size: 14px;
   color: rgb(77, 77, 77);
 }
-
-/* card end here */
