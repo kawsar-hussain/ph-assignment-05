@@ -65,7 +65,7 @@ function history(callTitle, callNumber) {
   history.classList.add("history");
   let historyTitle = getById("history-title");
   historyTitle.innerText = title;
-  historyTitle = historyTitle.innerText;
+  let historyTitleText = historyTitle.innerText;
   const updatedHistory = document.createElement("div");
   const historyInfo = document.createElement("div");
   const time = document.createElement("p");
@@ -86,7 +86,7 @@ function history(callTitle, callNumber) {
   historyInfo.appendChild(p1);
   historyInfo.appendChild(p2);
   // set value
-  p1.innerText = historyTitle;
+  p1.innerText = historyTitleText;
   p2.innerText = serviceHotNumber;
   time.innerText = getCurrentTime();
 
@@ -116,6 +116,13 @@ call("call-btn-electricity", "card__subtitle__electricity", "title__bangla__elec
 call("call-btn-brac", "card__subtitle__brac", "title__bangla__brac", "hot_number_brac");
 call("call-btn-railway", "card__subtitle__railway", "title__bangla__railway", "hot_number_railway");
 
+//clear history
+const clearMe = document.getElementById("history-container");
+const clear = getById("clear");
+clear.addEventListener("click", function () {
+  clearMe.innerHTML = "";
+});
+
 // clicked call btn decrease coin
 const calls = getElementsByClassName("call-btn");
 let coin;
@@ -131,13 +138,6 @@ for (const call of calls) {
     document.getElementById("coin").innerText = updatedCoin;
   });
 }
-
-//clear history
-const clear = getById("clear");
-clear.addEventListener("click", function () {
-  const clearMe = document.getElementById("history-container");
-  clearMe.style.display = "none";
-});
 
 //copy text
 //function
@@ -161,7 +161,7 @@ function copy(id, copy) {
 }
 
 // get copy by function
-copy("copy-btn-emergency", "hot-number-emergency");
+copy("copy-btn-emergency", "hot_number_emergency");
 copy("copy-btn-police", "hot_number_police");
 copy("copy-btn-fire", "hot_number_fire");
 copy("copy-btn-ambulance", "hot_number_ambulance");

@@ -2,6 +2,10 @@ nav {
   padding: 10px 10px;
   flex-direction: column;
   gap: 10px;
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  box-shadow: 0 1px 10px #00000037;
 }
 
 .nav__title {
@@ -9,7 +13,7 @@ nav {
 }
 
 .nav__logo {
-  flex-direction: column;
+  justify-content: center;
 }
 
 .br {
@@ -28,5 +32,25 @@ nav {
 .banner__desc {
   text-align: center;
   padding: 0 10px;
+  font-size: 15px;
+}
+
+main {
+  padding: 30px 10px;
+}
+
+.calls-login {
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.call-card-container {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+
+.copy-btn,
+.call-btn {
+  padding: 8px;
   font-size: 15px;
 }

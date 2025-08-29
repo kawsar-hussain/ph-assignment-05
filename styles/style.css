@@ -188,12 +188,21 @@ main {
   color: var(--text-white);
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .call-btn {
   background-color: var(--primary-color);
   color: rgb(231, 231, 231);
   border: none;
+}
+
+.call-btn:hover {
+  background-color: #008f35;
+}
+
+.copy-btn:hover {
+  background-color: #f2f2f2;
 }
 
 /* call history */
@@ -227,6 +236,12 @@ main {
   color: white;
   border-radius: 1000px;
   border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clear-btn:hover {
+  background-color: #008f35;
 }
 
 .history {
